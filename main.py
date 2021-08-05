@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-class Pitch:
-=======
 class Game:
->>>>>>> 74ae132 (Initial commit)
     pitch_list = [['◻', '◻', '◻'], ['◻', '◻', '◻'], ['◻', '◻', '◻']]
 
     def show_pitch(self):
@@ -33,18 +29,12 @@ class Game:
     def winner_check(self):
         if self.pitch_list[0][0] == self.pitch_list[1][1] == self.pitch_list[2][2] == '✗' or \
                 self.pitch_list[0][2] == self.pitch_list[1][1] == self.pitch_list[2][0] == '✗':
-<<<<<<< HEAD
-=======
             self.show_pitch()
->>>>>>> 74ae132 (Initial commit)
             print("\nX won!!!")
             return True
         elif self.pitch_list[0][0] == self.pitch_list[1][1] == self.pitch_list[2][2] == 'o' or \
                 self.pitch_list[0][2] == self.pitch_list[1][1] == self.pitch_list[2][0] == 'o':
-<<<<<<< HEAD
-=======
             self.show_pitch()
->>>>>>> 74ae132 (Initial commit)
             print("\nO won!!!")
             return True
         else:
@@ -86,10 +76,6 @@ class Game:
                 break
 
 
-<<<<<<< HEAD
-b = Pitch()
-b.start_game_for_two()
-=======
 b = Game()
 b.start_game_for_two()
->>>>>>> 74ae132 (Initial commit)
+print("bye")
